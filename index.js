@@ -48,7 +48,7 @@ app.get("/stream/:userId", function (req, res) {
     delete messages[userId]?.data;
   }, 5000);
 
-  // Note: Heatbeat for avoidance of client's request timeout of first time (30 sec)
+  // Note: Heartbeat for avoidance of client's request timeout of first time (30 sec)
   res.write(`:\n\n`);
 
   req.on("close", function () {
