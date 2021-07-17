@@ -17,7 +17,7 @@ const SSE_RESPONSE_HEADER = {
 
 // Connected users (request object of each user) :
 var users = {};
-// Connected messages of users:
+// Messages of known users:
 var messages = {};
 // SSE starting endpoint
 // You can access url `http://localhost:8081/stream/<userId>`
